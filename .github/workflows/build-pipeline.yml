@@ -20,7 +20,7 @@ jobs:
         run: echo "Built by Ahmed Ismail"
   job2:
     name: Test
-    depends-on: job1
+    needs: job1
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
